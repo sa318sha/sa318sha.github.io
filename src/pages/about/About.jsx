@@ -3,7 +3,6 @@ import React from "react";
 import { Box } from "@mui/system";
 import "./About.css"
 import "../../common/CommonFonts.css"
-import { Typography } from "@mui/material";
 
 export default function About(props){
 

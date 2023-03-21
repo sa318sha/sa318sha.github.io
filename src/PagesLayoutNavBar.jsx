@@ -3,9 +3,6 @@ import { Link } from "react-router-dom";
 
 import "./NavBarCSS.css"
 
-import AppBar from "@mui/material/AppBar";
-import { Container,Toolbar,Typography } from "@mui/material";
-import AdbIcon from '@mui/icons-material/Adb';
 
 export default function PagesLayoutNavBar(){
     return (

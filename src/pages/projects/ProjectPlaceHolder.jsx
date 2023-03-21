@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
 import "../../common/CommonFonts.css"
 
-export default function(props){
+export default  function ProjectPlaceHolder(props){
     //  `url(sweettexture.jpg) top center / 200px 200px no-repeat fixed padding-box content-box red;`
 
     const img = props.image;
