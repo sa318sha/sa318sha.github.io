@@ -1,0 +1,44 @@
+.paddingLittle{
+    padding: 0em 0.5em;
+}
+.paddingMedium{
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+.paddingLarge{
+    padding: 1em 2em 1em 2em;
+}
+
+
+.serif{
+    font-family: Georgia, serif;
+}
+.white {
+    color:white;
+}
+.center{
+    text-align: center;
+}
+
+.orangeBox{
+    margin: 1em;
+    border: 2px solid #FFBD8E;
+    border-radius: "5px";
+}
+
+.centerColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.noMargin {
+    margin:0;
+}
+
+.fullBox {
+    width:100%,;
+    height:100dvh;
+}

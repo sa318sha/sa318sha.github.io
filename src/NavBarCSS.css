@@ -1,0 +1,78 @@
+
+body{
+    margin: 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+}
+
+
+
+.nav {
+    margin: 0;
+    background-color:transparent;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.25s ease-in-out;   
+}
+
+.navBarLinkAnimation{
+    color:transparent;
+    /* transition: color 0.25s ease-in-out; */
+    text-decoration: none;
+    border:transparent;
+    transition: color 0.25s ease-in-out;
+    
+}
+
+
+
+
+.nav:hover{
+    background-color: #333; 
+}
+.nav:hover .navBarLinkAnimation {
+    color: white;
+    /* border:white; */
+}
+
+.nav:hover .homeLink{
+    border-color: white;
+    color: white
+}
+
+.homeLink{
+    font-size: 2em;
+    /* margin-left: 2.5em; */
+    border: 2px solid transparent;
+    color: transparent;
+    border-radius: 50%;
+    padding: 0.25em;
+    margin:0.25em;
+    transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out;
+
+}
+
+
+ul.subNav{
+    font-size: 1.25em;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    /* gap: 50px; */
+}
+
+.navBarOptions {
+    /* margin-left: 50px; */
+    margin: 2em;
+
+}
+
+
+/* */

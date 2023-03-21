@@ -1,0 +1,11 @@
+.mainBackground{
+    background: url("./../../../assets/cosmos2.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.mainBackgroundTint{
+    background-color: rgba(200,100,0,.5);
+    background-blend-mode: multiply;
+}
