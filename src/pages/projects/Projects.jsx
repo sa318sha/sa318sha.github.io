@@ -1,16 +1,12 @@
 import React from "react";
 
 import { Box } from "@mui/system";
-import { Typography } from "@mui/material";
-import {ProjectContainer} from "./ProjectContainer";
 import "../../common/CommonFonts.css"
 import ProjectPlaceHolder from "./ProjectPlaceHolder";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
 import { useLocation,  } from "react-router-dom";
-import { useEffect } from "react";
 import { getProjects } from "./ProjectsDescriptions";
-import { Link } from "react-router-dom";
 import Project from "./Project";
 function ProjectDisplay(){
     

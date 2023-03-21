@@ -23,7 +23,6 @@ export default  function ProjectPlaceHolder(props){
             width:"30%",
             minWidth:"30%",
             maxWidth:"300px",
-            width:"1fr",
             height:"100%",
             background: background,
             maxHeight:"200px",
