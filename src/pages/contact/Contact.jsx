@@ -21,15 +21,14 @@ export default function Contact(props){
             sx={{
                 margin:"0",
                 
-                width:"80%",
-                height:"80%",
-                // border:"2px solid #FFBD8E",
+                width:"90%",
+                height:"90%",
                 // backgroundColor:"10",
                 borderRadius:"10px",
-                display:"grid",
-                gridGap:"20px",
-                gridTemplateRows: "repeat(3,1fr)",
-                gridTemplateColumns:"repeat(4,1fr)",
+                display:"flex",
+                flexFlow:"row wrap",
+                justifyContent:"space-between",
+                alignItems:"center"
                 // gap:"50px",
             }}>
 
@@ -38,8 +37,9 @@ export default function Contact(props){
 
 
             <Box sx={{
-                    gridArea:"1/1/3/3",
-                    flex:1,
+                    flex:1.4,
+                    margin:"2em 4em auto 4em",
+                    padding:"4em 2em",
                     display:"flex",
                     border:"2px solid #FFBD8E",
                 borderRadius:"10px",
@@ -80,15 +80,15 @@ export default function Contact(props){
             </Box>
              
             <Box sx={{
-                    gridArea:"2/3/4/5",
                     flex:1,
+                    margin:"auto 4em 0em 4em",
+                    padding:"4em 2em",
                     display:"flex",
                     border:"2px solid #FFBD8E",
                 borderRadius:"10px",
                     flexFlow: "column nowrap",
                     justifyContent:"center",
                     alignItems:"center",
-                    marginLeft:"200px",
                 }}> 
                 
                 <Typography

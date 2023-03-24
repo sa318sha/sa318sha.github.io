@@ -1,12 +1,9 @@
 
-body{
-    margin: 0;
-}
-
 .fixed {
     position: fixed;
     top: 0;
     width: 100%; 
+    z-index: 100;
 }
 
 
@@ -50,9 +47,12 @@ body{
     /* margin-left: 2.5em; */
     border: 2px solid transparent;
     color: transparent;
+    height: 2em;
+    width: 2em;
     border-radius: 50%;
     padding: 0.25em;
     margin:0.25em;
+    text-align: center;
     transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out;
 
 }
@@ -65,14 +65,15 @@ ul.subNav{
     justify-content: flex-end;
     list-style-type: none;
     align-items: center;
-    /* gap: 50px; */
+}
+
+ul{
+    padding:0;
 }
 
 .navBarOptions {
-    /* margin-left: 50px; */
     margin: 2em;
 
 }
 
 
-/* */

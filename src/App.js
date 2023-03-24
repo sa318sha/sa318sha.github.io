@@ -7,6 +7,8 @@ import Projects from "./pages/projects/Projects"
 import About from "./pages/about/About"
 import PagesLayoutNavBar from './PagesLayoutNavBar';
 import { useEffect, useState } from 'react';
+import Test from "./pages/test"
+
 const App = () => {
 
   const [firstRender, setFirstRender] = useState(true)
@@ -30,6 +32,8 @@ const App = () => {
 
         {/* <Route path ="/School" element={<School/>}/> */}
         <Route path ="/about" element={<About/>} />
+        <Route path="/test" element={<Test/>} />
+
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Route>
 

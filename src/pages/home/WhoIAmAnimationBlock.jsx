@@ -3,8 +3,7 @@ import { Box } from "@mui/system"
 import { useEffect, useState } from "react"
 import { Button } from "@mui/material"
 import { useNavigate } from "react-router-dom"
-
-
+import "../../common/CommonFonts.css"
 
 
 
@@ -24,7 +23,7 @@ export default function WhoIAmAnimationBlock({firstRender}){
         },13000)
         setTimeout(()=>{
             setVariable("an Engineer!")
-        },15800)
+        },16300)
         
 
     },[])
@@ -32,75 +31,76 @@ export default function WhoIAmAnimationBlock({firstRender}){
 
     function renderAnimation(renderState){
         
-        if(true){
-            return (
+        // if(true){
+        //     return (
     
     
-                <>
-                <div className="textContainer">
-                        <p class="format animation1" >Hello :)</p>
-                    </div>
-                    <div className="textContainer">
-                        <p class="format animation2" >My Name is Sasha</p>
+        //         <>
+        //         <div className="textContainer">
+        //                 <p class="format animation1" >Hello :)</p>
+        //             </div>
+        //             <div className="textContainer">
+        //                 <p class="format animation2" >My Name is Sasha</p>
     
-                    </div>
-                    <Box sx={{
-                        width:"25rem",
-                        textAlign: "center",
-                        display:"flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    }}>
-                        <p class="format animation3" >I am {variable}</p>
-                    </Box>
+        //             </div>
+        //             <Box sx={{
+        //                 width:"25rem",
+        //                 textAlign: "center",
+        //                 display:"flex",
+        //                 justifyContent: "center",
+        //                 alignItems: "center",
+        //             }}>
+        //                 <p class="format animation3" >I am {variable}</p>
+        //             </Box>
                     
-                    <Button className="animation4" variant="outlined"
-                    sx={{
-                        color:"white ",
-                        borderColor:"#FFBD8E",
-                        fontSize:"20px",
-                        fontFamily: "orpheusPro",
-                    }}
-                    onClick={()=>{
-                        navigate("/About")
-                        // console.log(" world")
-                    }}>Learn More</Button>
+        //             <Button className="animation4" variant="outlined"
+        //             sx={{
+        //                 color:"white ",
+        //                 borderColor:"#FFBD8E",
+        //                 fontSize:"20px",
+        //                 fontFamily: "orpheusPro",
+        //                 padding:"0.5em 1em",
+                        
+        //             }}
+        //             onClick={()=>{
+        //                 navigate("/About")
+        //                 // console.log(" world")
+        //             }}><div>Learn More</div></Button>
                 
                 
-                </>
-            )
-        }else{
+        //         </>
+        //     )
+        // }else{
     
-        }
+        // }
     }
     return (
         
-            <Box class="animationContainer"
-            
-            sx={{
-
-                // display: "inline-block",
-                colour:"white",
-                textAlign:"center"
-            }}
-            >
-                {renderAnimation(firstRender)}
-
+            <div class="centerElementsColumn animationContainer">
                 
-
-                {/* {firstRender? 
-                    <>
-                    <p class="format animation1">Hello <br></br> My Name Is Sasha.</p> 
-                    <p class="format animation2"> I am {variable}</p> 
-                    </>
-                    : 
-                    <>
-                    <p className="format"> Hello <br></br> My Name Is Sasha.</p> 
-                    <p className="format"> I am an Engineer! </p> 
-                    </>
-                    } */}
-
-            </Box>
+    
+    
+                
+                    <div className="textContainer centerElementsRow">
+                        <p class="format animation1" >Hello :)</p>
+                    </div>
+                    <div className="textContainer centerElementsRow">
+                        <p class="format animation2" >My Name is Sasha</p>
+    
+                    </div>
+                    <div className="changingTextContainer centerElementsRow">
+                        <p class="format animation3" >I am {variable}</p>
+                    </div>
+                    
+                    <button className=" learnMoreButton animation4"
+                    onClick={()=> navigate("/about")}>
+                        Learn more
+                    </button>
+                
+                
+                
+            
+            </div>
         
         
 

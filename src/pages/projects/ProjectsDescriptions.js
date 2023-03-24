@@ -5,19 +5,18 @@ const projects = [
         absolutePath:"/projects/neural",
         
 
+        name:"Neural Network Library",
+        overview: "lorem hogifajdfno aiwdhaiwodhnaodh awidjawoid",
+        description: "uidhwadoajdiowajida",
+        link:"https://github.com/sa318sha/NN_Library",
+        linkType:"Github",
+        // imgLink="",
+        paragraph:"",
+        learned:"",
+        toComplete:"",
+        future:"",
 
-        information:{
-            name:"Neural Network Library",
-            overview: "lorem hogifajdfnoaiwdhaiwodhnaodhawidjawoid",
-            description: "uidhwadoajdiowajida",
-            link:"https://github.com/sa318sha/NN_Library",
-            linkType:"Github",
-            paragraph:"",
-            learned:"",
-            toComplete:"",
-            future:"",
-
-        }
+        
     }
 
 

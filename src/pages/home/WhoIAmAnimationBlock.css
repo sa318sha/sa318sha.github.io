@@ -1,26 +1,52 @@
 .textContainer{
   width:max-content;
   text-align: center;
-  display:flex;
-  justify-content: center;
-  align-items: center;
 
 
 }
 .animationContainer{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     flex-flow: column nowrap;
-  
+    font-size:"2.5em";
+    color:"white";
+    text-align:"center";
+    font-size: 2.5em;
   }
-  
+ 
+.changingTextContainer {
+  width: 10em;
+  text-align: center;
+}
+
+
+.learnMoreButton{
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #FFBD8E;
+  border-radius: 5px;
+  color:white;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 0.7em;
+
+}
+/* sx={{
+color:"white ",
+borderColor:"#FFBD8E",
+fontSize:"20px",
+fontFamily: "orpheusPro",
+padding:"0.5em 1em",
+
+}} */
 p.format{
+  
     overflow: hidden;
     white-space: nowrap;
     color:white;
     font-family: orpheus-pro;
+    margin:0.5em;
 }
   p.animation1 {
     
@@ -30,34 +56,7 @@ p.format{
     animation: typing 2.3s steps(30, end) 2s forwards, blinking 1s  0.5s 5 forwards;
   } 
 
-  @keyframes typing {
-    0% { width: 0 }
-    22% { width: 100%;
-    }
 
-    93%{
-        width: 100%;
-    }
-    100%{
-        width: 75%;
-    }
-    
-
-  }
-  
-  @keyframes blinking {
-    0% {
-        border-color: transparent;
-      }
-    50% {border-color: white}
-
-
-    100% {
-        border-color: transparent;
-
-    }
-
-  }
 
 
 p.animation2 {
@@ -65,7 +64,7 @@ p.animation2 {
 
     border-right: 2px solid;
     width: 0;
-    animation: typing-normal 1.5s steps(30, end) 5.5s forwards, blinking 1s  3.5s 5 forwards, no-border 5.5s ;
+    animation: typing-normal 1s steps(30, end) 5.5s forwards, blinking 1s  3.5s 5 forwards, no-border 5.5s ;
     /* typing-2 2.7s steps(30, end) 6s forwards, blinking-2 1s 3.5s infinite forwards,
             typing-3 2.2s steps(30, end) 10s forwards,
             typing-4 2.2s steps(30, end) 13.5s forwards,
@@ -86,17 +85,61 @@ p.animation3 {
 }
 
 .animation4 {
-  border-right: 2px solid;
-  width: 0;
-  animation: pop-up 2s 20s forwards;
+  opacity: 0;
+  width:max-content;
+  animation: fadeIn 2s ease-in-out forwards 19s; /* Use the fadeIn animation for 1 second with ease-in-out timing and forward fill mode */
 
 }
 
-@keyframes{
+
+
+
+
+
+
+
+
+@keyframes typing {
+  0% { width: 0 }
+  22% { width: 100%;
+  }
+
+  93%{
+      width: 100%;
+  }
+  100%{
+      width: 75%;
+  }
   
+
+}
+
+@keyframes blinking {
+  0% {
+      border-color: transparent;
+    }
+  50% {border-color: white}
+
+
+  100% {
+      border-color: transparent;
+
+  }
+
 }
 
 
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
 
 
 @keyframes no-border {
@@ -164,10 +207,10 @@ p.animation3 {
     }
 
     85%{
-        width: 71%;
+        width: 72%;
     }
     100%{
-        width: 71%;
+        width: 72%;
     }
     
 

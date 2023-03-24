@@ -58,8 +58,7 @@ function ProjectDisplay(){
                 width:"70%",
             }}>
             <p className="white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum quasi odit nihil, tempora eveniet obcaecati praesentium at corrupti non omnis dolorum est minima delectus magnam, ducimus officiis, porro velit cupiditate facilis rem illum quo molestiae eos. Quo, suscipit vitae. Nulla consectetur est sed minus, architecto nobis quos delectus corrupti eaque.
-            </p>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sed doloremque quod sequi adipisci et inventore cupiditate? Officiis, officia deleniti.            </p>
             </Box>
             
 
@@ -72,8 +71,8 @@ function ProjectDisplay(){
             }}> 
             
            
-                {topics.map(({ information, relativePath }) => (
-                    <ProjectPlaceHolder title={information.name} description={information.overview} clickHandler={()=>{ navigate(currentPath + relativePath)}}>
+                {topics.map(({ name, overview, relativePath }) => (
+                    <ProjectPlaceHolder title={name} description={overview} clickHandler={()=>{ navigate(currentPath + relativePath)}}>
                     
                     </ProjectPlaceHolder>
                 ))}
@@ -99,8 +98,8 @@ function ProjectDisplay(){
     }else{
         return(
             <Routes>
-                {topics.map(({ information, relativePath }) => (
-                <Route path={relativePath} element = {<Project information={information} />}/>
+                {topics.map((data) => (
+                <Route path={data.relativePath} element = {<Project information={data.information} />}/>
                 
                 // </ProjectPlaceHolder>
             ))}

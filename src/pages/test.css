@@ -1,143 +1,56 @@
-.paddingLittle{
-    padding: 0em 0.5em;
-}
-.paddingMedium{
-    padding: 0.5em 1em 0.5em 1em;
-}
-
-.paddingLarge{
-    padding: 1em 2em 1em 2em;
-}
-
-.noMargin{
-    margin:0;
-}
-
-.marginLittle{
-    margin:0.5rem;
-}
-
-.serif{
-    font-family: Georgia, serif;
-}
-.white {
-    color:white;
-}
-
-.black {
-    color:black;
-}
-
-.center{
-    text-align: center;
-}
-
-.orangeBox{
-    margin: 1em;
-    border: 2px solid #FFBD8E;
-    border-radius: "5px";
-}
-
-.bold{
-    font-weight: bold;
-}
-
-.centerColumn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.noMargin {
-    margin:0;
-}
-
-.fullBox {
-    width:100%;
-    height:100dvh;
-}
-
-@media all and (max-width: 600px){
-    .smallScreen{
-       display: none;
-    }
-  }
-
-.centerElementsRow{
-    display:flex;
-
-    justify-content:center;
-    align-items: center;
+/* *, *::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
 
 }
 
-
-.centerElementsColumn{
-    display:flex;
-
-    justify-content:center;
-    align-items: center;
-    
+:root{
+    --body-bg:hsl(0,0%,18%)
 }
 
-
-.wrapContainer {
-    width: max-content;
-    height: max-content;
-
+.testWrapper{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 0;
+    background: var(--body-bg);
+    color:white
 }
 
 .wrapper{
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
 }
 
-.sectionWrapper{
-    position: relative;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    background: var(--body-bg);
-    padding-block:6rem;
-  }
 
-
-.diagonal1 {
+.diagonal {
     --skew-angle:-5deg;
     position: relative;
     isolation: isolate;
     
        
-  }
-  .diagonal2 {
-    --skew-angle:5deg;
-    position: relative;
-    isolation: isolate;
-    
-       
-  }
-  
-  .diagonal1::before, .diagonal2::before {
+}
+
+.diagonal::before {
     content:"";
+    background-color: steelblue;
     position: absolute;
     inset: 0;
     transform:skewY(var(--skew-angle));
     z-index: -1;
     background-image: 
     linear-gradient(
-        to right,
-        #e9a512,
-        #edb971,
+        45deg,
+        #12c2e9,
+        #c471ed,
         #f64f59
     );
        
-  }
+}
 
-  .spikes{
+
+.spikes{
     --spike-color:var(--body-bg);
     --spike-width:50px;
     --spike-height:10px;
@@ -175,7 +88,6 @@
 
 
 .wavy{
-    padding-block: 50px;
     background: linear-gradient(
         to right,
         #00f260,
@@ -190,4 +102,4 @@
     -webkit-mask: var(--mask);
             mask: var(--mask);
 
-} 
+} */
