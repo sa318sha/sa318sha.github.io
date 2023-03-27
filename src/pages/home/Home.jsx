@@ -7,7 +7,7 @@ import { Box } from "@mui/system";
 import "./Home.css"
 import "../../common/CommonFonts.css"
 import { Typography, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 export default function Home({render}){
@@ -52,8 +52,8 @@ export default function Home({render}){
                         <h2 class className="sectionTitle"> My passion and focus is Software Development</h2>
                         <p>
                         As an undergraduate Software Engineering student, I am constantly excited about my projects and learning new things. Every day, I feel like I am unlocking a new piece of the puzzle and building my skills as a programmer. Whether it's creating a new app, playing with neural networks, or working with graphics, I am always eager to dive in and learn as much as I can.</p>
-
-                    
+                        <Link className="standardButtonStyle" to="/about">About</Link>
+                        
                     </div>
                 </section>
                 <div className="seperator"></div>

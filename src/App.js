@@ -27,12 +27,7 @@ const App = () => {
         <Route path ="/" element={<Home render={firstRender}/>}  />
         <Route path ="/contact" element={<Contact/>} />
         <Route path ="/projects/*" element={<Projects/>}/>
-          
-        
-
-        {/* <Route path ="/School" element={<School/>}/> */}
         <Route path ="/about" element={<About/>} />
-        <Route path="/test" element={<Test/>} />
 
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Route>

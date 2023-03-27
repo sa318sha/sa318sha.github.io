@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     width: 100%; 
-    z-index: 100;
+    z-index: 10;
 }
 
 
@@ -43,6 +43,7 @@
 }
 
 .homeLink{
+    position: relative;
     font-size: 2em;
     /* margin-left: 2.5em; */
     border: 2px solid transparent;
@@ -55,6 +56,33 @@
     text-align: center;
     transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out;
 
+}
+
+.homeLink::after{
+
+
+
+}
+
+.homeLink:hover::after{
+    content: "";
+    position: absolute;
+    top: 52%;
+    transform: translateY(-50%);
+    left: 0.3rem;
+    width: 3.2rem;
+    height: 2px;
+    background-color: white;
+    animation: width 0.3s 1 forwards ease-in-out;
+}
+
+@keyframes width {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 3.2rem;
+    }
 }
 
 

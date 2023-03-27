@@ -10,9 +10,9 @@ export default function PagesLayoutNavBar(){
             <nav className="nav fixed">
                 <Link className="homeLink navBarLinkAnimation" to="/" >SK</Link>
                 <ul className="subNav">
-                    <li ><Link className="navBarOptions navBarLinkAnimation" to="/About">About</Link></li>    
-                    <li ><Link className="navBarOptions navBarLinkAnimation" to="/Projects">Projects</Link></li>
-                    <li ><Link className="navBarOptions navBarLinkAnimation" to="/Contact">Contact</Link></li>
+                    <li key={0}><Link className="navBarOptions navBarLinkAnimation" to="/About">About</Link></li>    
+                    <li key={1}><Link className="navBarOptions navBarLinkAnimation" to="/Projects">Projects</Link></li>
+                    <li key={2}><Link className="navBarOptions navBarLinkAnimation" to="/Contact">Contact</Link></li>
 
                 </ul>
             </nav>

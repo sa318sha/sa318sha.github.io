@@ -9,6 +9,10 @@
     padding: 1em 2em 1em 2em;
 }
 
+.standardButtonStyle{
+    text-decoration: none;
+}
+
 .noMargin{
     margin:0;
 }
@@ -30,6 +34,11 @@
 
 .center{
     text-align: center;
+}
+
+.marginCenter{
+    width: 100%;
+    margin-inline: 1em;
 }
 
 .orangeBox{
@@ -73,6 +82,16 @@
 
 }
 
+.BGgreen{
+color:green
+}
+
+.linkButton{
+    text-decoration: none;
+    border-radius: 5px;
+    padding:15px 15px 5px 15px;
+}
+
 
 .centerElementsColumn{
     display:flex;
@@ -105,7 +124,9 @@
     padding-block:6rem;
   }
 
-
+ul  {
+    list-style: none;
+}
 .diagonal1 {
     --skew-angle:-5deg;
     position: relative;
@@ -174,8 +195,8 @@
 
 
 
-.wavy{
-    padding-block: 50px;
+.wave{
+    padding-block: 4rem;
     background: linear-gradient(
         to right,
         #00f260,
