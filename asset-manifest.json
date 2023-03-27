@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.85dfaa50.css",
-    "main.js": "/static/js/main.4c8dc518.js",
+    "main.css": "/static/css/main.9d9f3ffd.css",
+    "main.js": "/static/js/main.15441aee.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/cosmos2.jpg": "/static/media/cosmos2.abdb960c20a5a8d95db3.jpg",
+    "static/media/movieTheatre.png": "/static/media/movieTheatre.1946867cb611f14b15b2.png",
+    "static/media/UofCCoat.svg.png": "/static/media/UofCCoat.svg.48f623dafa7430119cd3.png",
+    "static/media/Neural-Network-2.png": "/static/media/Neural-Network-2.e130c15c450e42c0e950.png",
+    "static/media/msp430.jpg": "/static/media/msp430.76945cec9e5a2aa45451.jpg",
+    "static/media/Resume.pdf": "/static/media/Resume.7543e77956acefefe7ce.pdf",
+    "static/media/neuralNetwork.jpg": "/static/media/neuralNetwork.4a8b0b5cfd3e05373eb6.jpg",
     "index.html": "/index.html",
-    "main.85dfaa50.css.map": "/static/css/main.85dfaa50.css.map",
-    "main.4c8dc518.js.map": "/static/js/main.4c8dc518.js.map",
+    "static/media/triangle.svg": "/static/media/triangle.23c5f47203bf2ea0da5e.svg",
+    "main.9d9f3ffd.css.map": "/static/css/main.9d9f3ffd.css.map",
+    "main.15441aee.js.map": "/static/js/main.15441aee.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.85dfaa50.css",
-    "static/js/main.4c8dc518.js"
+    "static/css/main.9d9f3ffd.css",
+    "static/js/main.15441aee.js"
   ]
 }
