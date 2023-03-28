@@ -3,83 +3,49 @@ import React, { useEffect, useState } from "react";
 import { Box } from "@mui/system";
 import "../../common/CommonFonts.css"
 import "./Project.css"
-import { getfirst4Projects,getRestOfProjects } from "./ProjectsLocalAPI.js";
+import { getfirst4Projects,getRestOfProjects, getProject } from "./ProjectsLocalAPI.js";
 import { ProjectContainer } from "./ProjectContainer";
 import OlderProjectContainer from "./OlderProjectContainer";
-
+import PopUp from "./ProjectPopUp";
 
 export default function Projects(props){
     
-    const temp = [<div>test1</div>, <div>test2</div>]
     
-    const[first4Projects,setFirst4Projects] = useState(getfirst4Projects())
-    const[restOfProjects,setRestOfProjects] = useState(getRestOfProjects())
-    const[hover, setHover] = useState(false)
+    const [popUp, setPopUp] = useState(false)
+    const [popUpIdx, setPopUpIndex] = useState(0)
+
+    const first4Projects = getfirst4Projects()
+    const restOfProjects = getRestOfProjects()
 
 
-
-    let carouselSize = restOfProjects.length
-
-    let [count, setCount] = useState([0,1,2])
-    let [tuple, setTuple] =useState([null,count[1]])
     
-    if(tuple[1]!== count[1]){
-        setTuple([tuple[1],count[1]])
-    }
 
-    let prev = tuple[0];
-    let direction = prev > count[0] ? "decreasing": "increasing"
-
-
-    const increment = () =>{
-        var a = count[0] +1 > carouselSize-1 ? 0: count[0]+1
-        var b = count[1] +1 > carouselSize-1 ? 0: count[1]+1
-        var c = count[2] +1 > carouselSize-1 ? 0: count[2]+1
-
-
-        setCount([a,b,c])
-    }
-
-    const decrement = () =>{
-        var a = count[0] -1 < 0 ? carouselSize-1: count[0]-1
-        var b = count[1] -1 < 0 ? carouselSize-1: count[1]-1
-        var c = count[2] -1 < 0 ? carouselSize-1: count[2]-1
-
-
-        setCount([a,b,c])
-    }
-
-    useEffect(()=>{
-        // var interval
-        // if(!hover){
-        //     setInterval(()=>{
-        //         increment()
-        //         // console.log("")
-        //     },1000)
-        // }
-        // return clearInterval(interval)
-        
-        
-    })
 
     return (
         
-        <div className="projectsPageWrapper">
+        <div className="projectsPageWrapper" onClick={()=>{
+            console.log("popup closed")
+            setPopUp(false)
+        }}>
+            {popUp?
+            <PopUp project={getProject(popUpIdx)}
+                close={setPopUp}
+            />
+            : ""}
+
             <section>
                 <h3 className="noMargin projectsTitle">Projects</h3>
                 <div className="projectsWrapper">
 
                     {first4Projects.map( (project,index) =>{
-                        return <ProjectContainer key={index} 
-                        title={project.title}
-                        description={project.description}
-                        img={project.image}
-                        link={project.link} />
+                        return <ProjectContainer 
+                        key={index} 
+                        setPopUp={setPopUp}
+                        setPopUpIndex={setPopUpIndex}
+                        description={true}
+                        picture={true}
+                        project = {project} />
                     })}
-
-                    
-
-
 
                 </div>
             </section>
@@ -88,14 +54,16 @@ export default function Projects(props){
                 <div className="olderProjectWrapper">
 
 
-                        {/* {for(const i =0)} */}
                         <div className="carouselProjectContainer">
                             {restOfProjects.map((project,index) =>{
-                                return <OlderProjectContainer key={index}
-                                title={project.title}
-                                img={project.image}
-                                link={project.link} 
-                                />
+                                return <ProjectContainer 
+                                key={index} 
+                                setPopUp={setPopUp}
+                                setPopUpIndex={setPopUpIndex}
+                                description={false}
+                                picture={false}
+                                project = {project} />
+
 
 
                             })}

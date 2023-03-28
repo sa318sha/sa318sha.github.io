@@ -1,10 +1,7 @@
 import React from "react";
 
-import { Box } from "@mui/system";
-import { Typography } from "@mui/material";
-import {Button} from "@mui/material";
 import "./Contact.css"
-
+import Resume from "../../assets/Resume.pdf"
 export default function Contact(props){
 
     return (
@@ -29,7 +26,7 @@ export default function Contact(props){
                                 if you want to get in contact with me, or have any additional inquiries. Feel free to shoot me an email with the button below
     
                                 </p>
-                                    <a className="emailBButton" href="mailto:kobrusevsasha318@gmail.com"><span class="material-symbols-outlined">
+                                    <a className=" iconButtonBlack" href="mailto:kobrusevsasha318@gmail.com"><span class="material-symbols-outlined">
                                     mail
                                     </span></a>
 
@@ -56,7 +53,7 @@ export default function Contact(props){
                                 <h2 class className="sectionTitle">  Download My Resume</h2>
                                 
                                 
-                                <a className="downloadButton" href="./contact/Resume.pdf"><span class="material-symbols-outlined white">
+                                <a className=" iconButtonWhite" href={Resume} download><span class="material-symbols-outlined white">
                                                                                                 download
                                                                                                 </span></a>
 

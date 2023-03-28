@@ -20,6 +20,24 @@
     margin-top:10px;
 }
 
+.projectLinkStyling{
+    text-decoration: none;
+
+    /* padding: 3px; */
+    /* border: 2px solid green; */
+    margin-bottom:0.4em;
+}
+
+.iconStyling{
+    color: rgb(109, 0, 109);
+    padding: 0.15em 0.5em;
+    background: linear-gradient(var(--projects-bg), var(--projects-bg)) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+
+}
+
 
 .projectsTitle{
     position: relative;
@@ -58,6 +76,23 @@
     padding-inline: 2em;
     padding-bottom: 5em;
 
+}
+
+.paragraphImageHolder{
+    height: 10em;
+    width: 20em;
+    float: right;
+}
+
+.paragraphImage{
+    /* width: 100%;
+    height: 15rem;
+    float: right;
+    margin-left:1rem; */
+    display: block;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .projectsWrapper{
@@ -121,14 +156,7 @@
     padding: 1em;
 }
 
-/* .olderProjectContainer:hover > .olderProject{
-    background-color: yellow;
-}
 
-.olderProject{
-    background-color: lightblue;
-    height: 10em;
-} */
 
 .carouselProjectContainer{
     display: flex;
@@ -201,10 +229,83 @@
     /* max-width: 18rem; */
     /* max-width:100%; */
     width:100%;
+    height: 18em;
     object-fit: cover;
 
 
 }
+.projectPopUpWrapper{
+    padding: 2em;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center ;
+    justify-content: start;
+}
+
+:root{
+    --project-pop-up:hsl(0, 0%, 17%);
+    
+}
+
+.popUpParagraphsWrapper{
+    /* padding-block: 2em; */
+    width: 100%;
+}
+
+.popUpParagraph{
+    padding-block: 3em;
+    padding-inline: 2em;
+    text-align:left;
+    
+
+}
+
+.popUp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+
+
+.projectPopUpContainer{
+    --x-var:90%;
+    --y-var:max-content;
+
+    position: absolute;
+    /* overflow-y: scroll; */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+
+
+    height: var(--y-var);
+    width: var(--x-var);
+    left: 50%;
+    margin-left: calc( (var(--x-var ) * -1 ) / 2 );
+    top: 5%;
+    /* margin-top: 15em; */
+    /* margin-top: calc( (var(--y-var ) * -1 ) / 2 );; */
+    background: linear-gradient(var(--project-pop-up), var(--project-pop-up)) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+    border: 2px solid transparent;
+
+    z-index: 1;
+    border-radius: 2em;
+
+
+}
+
+.projectPopUpContainer::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 
 
 @media only screen and (max-width: 600px) {

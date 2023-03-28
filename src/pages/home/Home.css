@@ -22,6 +22,19 @@
   height: 100dvh;
 }
 
+.buttonTextFormatting{
+  /* margin-bottom: 50px; */
+  width:auto;
+}
+
+
+.buttonHolder{
+  margin-inline: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 .mainBackground::after{

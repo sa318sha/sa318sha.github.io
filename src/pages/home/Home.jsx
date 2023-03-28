@@ -52,7 +52,24 @@ export default function Home({render}){
                         <h2 class className="sectionTitle"> My passion and focus is Software Development</h2>
                         <p>
                         As an undergraduate Software Engineering student, I am constantly excited about my projects and learning new things. Every day, I feel like I am unlocking a new piece of the puzzle and building my skills as a programmer. Whether it's creating a new app, playing with neural networks, or working with graphics, I am always eager to dive in and learn as much as I can.</p>
-                        <Link className="standardButtonStyle" to="/about">About</Link>
+                        
+                        <div className="buttonHolder">
+                        <Link className="standardLinkStyle centerElementsRow" to="/about">
+                            <div className="buttonTextFormatting">
+                                Contact Me
+                            </div>
+                            <span class="material-symbols-outlined">
+                                arrow_forward
+                            </span>
+                        </Link>
+
+                        <Link className="standardLinkStyle centerElementsRow" to="/about">
+                            
+                        <div>Explore Projects</div> <span class="material-symbols-outlined arrowStyling">
+                        arrow_forward
+                        </span></Link>
+                        </div>
+
                         
                     </div>
                 </section>
@@ -61,9 +78,10 @@ export default function Home({render}){
                     <div className ="wrapper">
 
 
-                        <h2 class className="sectionTitle"> some content</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem tempore quos consequatur libero eius incidunt accusantium? Voluptatibus sapiente ut nulla corporis? Laboriosam placeat porro odit cumque commodi vel recusandae enim consequuntur, facere veritatis harum praesentium possimus, ut reiciendis quia excepturi pariatur libero et? Nostrum, assumenda ullam iste culpa minima repudiandae!</p>
-                    
+                        <h2 class className="sectionTitle"> Contact Me</h2>
+                        <a className="iconButtonBlack" href="mailto:kobrusevsasha318@gmail.com"><span class="material-symbols-outlined">
+                                    mail
+                                    </span></a>                    
                     </div>
                 </section>
                 

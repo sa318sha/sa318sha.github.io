@@ -9,8 +9,38 @@
     padding: 1em 2em 1em 2em;
 }
 
-.standardButtonStyle{
+
+.iconButtonWhite{
     text-decoration: none;
+
+    color: white;
+    border-radius: 5px;
+
+    border: 2px solid white;
+    padding:15px 15px 5px 15px;
+
+}
+
+.iconButtonBlack{
+    /* text-decoration: none; */
+    border-radius: 5px;
+    color: black;
+    border: 2px solid black;
+    padding:15px 15px 5px 15px;
+
+}
+
+.standardLinkStyle{
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid black;
+    padding:5px 15px 5px 15px;
+
+}
+
+.noPadding{
+    padding: 0;
 }
 
 .noMargin{
@@ -47,8 +77,27 @@
     border-radius: "5px";
 }
 
+.cursor:hover{
+    cursor: pointer;
+}
+
+.noCursor{
+    cursor: default;
+}
+
 .bold{
     font-weight: bold;
+}
+.noStyleButton{
+    all:unset
+}
+
+.marginBottom{
+    margin-bottom: 0.2em;
+}
+
+.backgroundTransparent{
+    background-color: transparent;
 }
 
 .centerColumn{
@@ -79,6 +128,7 @@
 
     justify-content:center;
     align-items: center;
+    flex-flow: row nowrap;
 
 }
 
@@ -92,15 +142,26 @@ color:green
     padding:15px 15px 5px 15px;
 }
 
+.lightGrey{
+    color: var(--gray-light)
+}
+
 
 .centerElementsColumn{
     display:flex;
 
     justify-content:center;
     align-items: center;
+    flex-flow: column nowrap;
     
 }
 
+.closeIcon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+}
 
 .wrapContainer {
     width: max-content;
