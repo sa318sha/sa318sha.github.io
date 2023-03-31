@@ -56,7 +56,7 @@ export default function Home({render}){
                         <div className="buttonHolder">
                         <Link className="standardLinkStyle centerElementsRow" to="/about">
                             <div className="buttonTextFormatting">
-                                Contact Me
+                                About Me
                             </div>
                             <span class="material-symbols-outlined">
                                 arrow_forward

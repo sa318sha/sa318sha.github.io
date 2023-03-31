@@ -3,10 +3,53 @@ import MSP430 from "../../assets/msp430.jpg"
 import MovieTheatre from "../../assets/movieTheatre.png"
 import settingsRattle from "../../assets/settings.png"
 import PURE from "../../assets/pure.png"
+import rattle from "../../assets/seng401.png"
 
 const projects = [
     {
         index:0,
+        title:"Rattle - Customizable chatting service" ,
+        description:"real time communication with the ability to customize UI",
+        link:"https://github.com/MylesPribeg/SENG401ChatApp",
+        image: rattle,
+        hasPopUp:true,
+        directLink:false,
+
+        startDate:"January 20th 2023",
+        endDate:"March 29th 2023",
+        popUp:{
+            
+            paragraphs:[
+                {
+                    content:"The real-time chatting application with customizable themes is a full-stack web application that allows users to chat with one another in real-time while giving them the ability to personalize their user interface. The application is developed using the MERN stack, which includes MongoDB, ExpressJS, ReactJS, and NodeJS.",
+                    
+                    
+                    image:"",
+                },{
+                    content:"The application consists of a server-side and a client-side. The server-side is built using NodeJS and ExpressJS, and it is responsible for handling the communication between users and persisting the chat messages in a MongoDB database. The server also implements web sockets using Socket.IO, which allows real-time communication between users." ,
+                    
+                    
+                    
+                    
+                    
+                    
+                    image:"",
+
+                },{
+                    content: "On the client-side, the user interface is built using ReactJS, and it is responsible for displaying the chat interface and handling user interactions. The user interface is customizable, and users can choose from a variety of themes, which are stored in the server-side. The client-side communicates with the server-side through REST APIs and web sockets.",
+
+                },{
+                    content:"The application provides several features, including user authentication, direct messaging, and group chat. Users can create and join multiple chat rooms, and they can send messages to other users in real-time. Users can also customize their profile, including their name and profile picture. To personalize the user interface, users can choose from a variety of themes, which include different colors, fonts, and layouts. The themes are stored in the server-side, and users can select their preferred theme from the client-side. When a user selects a theme, the client-side requests the theme data from the server-side, and it updates the user interface accordingly",
+                    image:settingsRattle,
+                }, {
+                    content:"Overall, the real-time chatting application with customizable themes is a full-stack web application that provides real-time communication between users while giving them the ability to personalize their user interface. The application is built using the MERN stack, which provides a scalable and robust development platform."
+                }
+
+            ]
+        }
+
+    },{
+        index:1,
         title:"Neural Network Library" ,
         description:"Personnel Neural Network for data and image processing",
         hasPopUp:false,
@@ -16,13 +59,13 @@ const projects = [
         startDate:"September 2021",
         endDate:" January 2022",
     },{
-        index:1,
+        index:2,
         title:"MicroController LCD movement program" ,
         description:"movement program that detects users orientation and momentum using gyroscope",
         link:"",
         hasPopUp:true,
         directLink:false,
-
+        
         image: MSP430,
         startDate:"January 2022",
         endDate:" March 2022",
@@ -53,75 +96,82 @@ const projects = [
         }
     },
     {
-        index:2,
-        title:"Rattle - Customizable chatting service" ,
-        description:"real time communication with the ability to customize UI",
-        link:"https://github.com/ayo1-olabode/SENG401ChatApp",
-        image: NeuralNetwork,
-        hasPopUp:true,
-        directLink:false,
-
-        startDate:"January 20th 2023",
-        endDate:"March 29th 2023",
-        popUp:{
-            
-            paragraphs:[
-                {
-                    content:"The real-time chatting application with customizable themes is a full-stack web application that allows users to chat with one another in real-time while giving them the ability to personalize their user interface. The application is developed using the MERN stack, which includes MongoDB, ExpressJS, ReactJS, and NodeJS.",
-                    
-                    
-                    image:"",
-                },{
-                    content:"The application consists of a server-side and a client-side. The server-side is built using NodeJS and ExpressJS, and it is responsible for handling the communication between clients and persisting the chat messages in a MongoDB database. The server also implements web sockets using Socket.IO, which allows real-time communication between clients." ,
-                    
-                    
-                    
-                    
-                    
-                    
-                    image:"",
-
-                },{
-                    content: "On the client-side, the user interface is built using ReactJS, and it is responsible for displaying the chat interface and handling user interactions. The user interface is customizable, and users can choose from a variety of themes, which are stored in the server-side. The client-side communicates with the server-side through REST APIs and web sockets.",
-
-                },{
-                    content:"The application provides several features, including user authentication, direct messaging, and group chat. Users can create and join multiple chat rooms, and they can send messages to other users in real-time. Users can also customize their profile, including their name and profile picture. To personalize the user interface, users can choose from a variety of themes, which include different colors, fonts, and layouts. The themes are stored in the server-side, and users can select their preferred theme from the client-side. When a user selects a theme, the client-side requests the theme data from the server-side, and it updates the user interface accordingly",
-                    image:settingsRattle,
-                }, {
-                    content:"Overall, the real-time chatting application with customizable themes is a full-stack web application that provides real-time communication between users while giving them the ability to personalize their user interface. The application is built using the MERN stack, which provides a scalable and robust development platform."
-                }
-
-            ]
-        }
-
-    },{
         index:3,
         title: "Undergraduate Research",
         description:"researched methodologies in implementing Federated Learning with Kubernetes for local deployment",
         image:PURE,
+        link:"",
         hasPopUp:true,
         directLink:false,
+        startDate:"April 2022",
+        endDate:" August 2022",
+        popUp:{
+
+            paragraphs:[
+                {
+                    content:"The research focuses on distributed learning systems (DLS) and federated learning which prioritize the security of its users and support large-scale applications and data. During the research we combined federated learning with the Kubernetes architecture to provide a further layer of abstraction to keep user node's data private.",
+                    image:"",
+                    
+                    
+                    
+                },{
+                    content:"during the research one of the set backs was that user agent nodes were not able to leave the system willing. this was due to all the power of the scheduling residing in the actual kubernetes scheduler. However, during the research it was found that the Kubernetes Scheduler could be extended to account for user edge nodes joining and leaving, thus creating a privacy barrier between the nodes and the server. during development, we used the Raspberry as an edge device with the k3s distribution of the Kubernetes framework to provide an interface to us that tells us what nodes are available and how well-suited they are for a task.",
+                    image:"",
+                }
+
+            ]
+        }
     },{
         index:4,
         title:"Movie Theatre Booking System",
         description:"Users are able to login with a UI and book a movie at available showtimes and theatres",
-        link:"",
-        image: MovieTheatre,
+        link:"https://github.com/noornawaz1/ENSF480---Final-Project",
+        // image: MovieTheatre,
         hasPopUp:true,
+        directLink:false,
+        startDate:"September 2022",
+        endDate:" December 2022",
+        popUp:{
 
-    },{
+            paragraphs:[
+                { 
+                    image:"",
+                    content: "• Coordinated development using waterfall techniques and comprehensive UML modelling Designed and implemented a GUI, which included a custom graphical seat-selection screen, using Java Swing. Interfaced with a MySQL database containing information such as movies, theatres, seats, registered users. Contributed to an extensive unit test suite written using JUnit."
+                }
+            ]
+        }
+
+    }
+    ,{
         index:5,
-        title:"Medical Booking Clinic" ,
-        description:"Graphical UI used to communicate with database to book and manage appointment",
-        link:"",
-        // image: NeuralNetwork
-    },{
-        index:6,
         title:"FoodBank simulated service" ,
         description:"",
         link:"",
+        hasPopUp:true,
+        directLink:false,
+        
+        // image: MSP430,
+        startDate:"January 2022",
+        endDate:" March 2022",
+        popUp:{
+
+            paragraphs:[
+                { 
+                    image:"",
+                    content: "Coordinated development using waterfall techniques and comprehensive UML modelling, Designed and implemented a GUI, which included a custom graphical seat-selection screen, using Java Swing. Interfaced with a MySQL database containing information such as Hamper, Food Items, Houses, registered users meals, etc. Contributed to an extensive unit test suite written using JUnit."
+                }
+            ]
+        }
         // image: NeuralNetwork
     }
+    
+    // ,{
+    //     index:6,
+    //     title:"Medical Booking Clinic" ,
+    //     description:"Graphical UI used to communicate with database to book and manage appointment",
+    //     link:"",
+    //     // image: NeuralNetwork
+    // }
        
     
        

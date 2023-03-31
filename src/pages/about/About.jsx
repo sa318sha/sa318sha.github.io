@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import { Box } from "@mui/system";
 import { Typography } from "@mui/material";
@@ -8,7 +8,9 @@ import UOfCCoat from "../../assets/UofCCoat.svg.png"
 import NeuralNetwork from "../../assets/Neural-Network-2.png"
 
 export default function About(props){
-
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
 
         <div className="aboutPageWrapper">

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import "./Contact.css"
 import Resume from "../../assets/Resume.pdf"
 export default function Contact(props){
-
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
 
 
