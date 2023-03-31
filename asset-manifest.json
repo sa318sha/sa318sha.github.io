@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d9f3ffd.css",
-    "main.js": "/static/js/main.15441aee.js",
+    "main.css": "/static/css/main.34b276cb.css",
+    "main.js": "/static/js/main.4c34b169.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/cosmos2.jpg": "/static/media/cosmos2.abdb960c20a5a8d95db3.jpg",
     "static/media/movieTheatre.png": "/static/media/movieTheatre.1946867cb611f14b15b2.png",
     "static/media/UofCCoat.svg.png": "/static/media/UofCCoat.svg.48f623dafa7430119cd3.png",
+    "static/media/seng401.png": "/static/media/seng401.edae1b4d8445108e1de2.png",
+    "static/media/pure.png": "/static/media/pure.9f876af2fe868527010c.png",
     "static/media/Neural-Network-2.png": "/static/media/Neural-Network-2.e130c15c450e42c0e950.png",
     "static/media/msp430.jpg": "/static/media/msp430.76945cec9e5a2aa45451.jpg",
+    "static/media/settings.png": "/static/media/settings.c7096eb4adbc47d6415d.png",
     "static/media/Resume.pdf": "/static/media/Resume.7543e77956acefefe7ce.pdf",
     "static/media/neuralNetwork.jpg": "/static/media/neuralNetwork.4a8b0b5cfd3e05373eb6.jpg",
     "index.html": "/index.html",
+    "static/media/close.svg": "/static/media/close.c76ad28c33323dfe86ec1e4bcf9c5b6c.svg",
+    "static/media/open_in_full.svg": "/static/media/open_in_full.aeeb7e57dea7647734311a40f21686f7.svg",
     "static/media/triangle.svg": "/static/media/triangle.23c5f47203bf2ea0da5e.svg",
-    "main.9d9f3ffd.css.map": "/static/css/main.9d9f3ffd.css.map",
-    "main.15441aee.js.map": "/static/js/main.15441aee.js.map",
+    "main.34b276cb.css.map": "/static/css/main.34b276cb.css.map",
+    "main.4c34b169.js.map": "/static/js/main.4c34b169.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d9f3ffd.css",
-    "static/js/main.15441aee.js"
+    "static/css/main.34b276cb.css",
+    "static/js/main.4c34b169.js"
   ]
 }
