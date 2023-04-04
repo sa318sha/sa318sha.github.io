@@ -1,4 +1,8 @@
 
+
+
+
+
 .fixed {
     position: fixed;
     top: 0;
@@ -15,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     transition: background-color 0.25s ease-in-out;   
+
 }
 
 .navBarLinkAnimation{
@@ -58,11 +63,6 @@
 
 }
 
-.homeLink::after{
-
-
-
-}
 
 .homeLink:hover::after{
     content: "";
@@ -105,3 +105,22 @@ ul{
 }
 
 
+
+
+@media (max-width:1000px) {
+  
+  .nav{
+    background-color:#222; 
+
+  }
+  .navBarLinkAnimation{
+    color: white;
+  }
+  .nav:hover{
+    background-color: #222; 
+}
+  .homeLink{
+    border: 2px solid white;
+    color: white;
+  }
+}
