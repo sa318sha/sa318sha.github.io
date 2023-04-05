@@ -9,7 +9,7 @@ const projects = [
     {
         index:0,
         title:"Rattle - Customizable chatting service" ,
-        description:"real time communication with the ability to customize UI",
+        description:"Real Time Communication with the Ability to Customize UI",
         link:"https://github.com/MylesPribeg/SENG401ChatApp",
         image: rattle,
         hasPopUp:true,
@@ -21,17 +21,12 @@ const projects = [
             
             paragraphs:[
                 {
-                    content:"The real-time chatting application with customizable themes is a full-stack web application that allows users to chat with one another in real-time while giving them the ability to personalize their user interface. The application is developed using the MERN stack, which includes MongoDB, ExpressJS, ReactJS, and NodeJS.",
+                    content:"The real-time chatting application with customizable themes is a full-stack web application that allows users to chat with one another in real-time while giving them the ability to personalize their user interface. The application is developed using the MERN stack, which includes MongoDB, ExpressJS, ReactJS, and NodeJS. the delpoyed application can be found at https://rattlechat.netlify.app",
                     
                     
                     image:"",
                 },{
-                    content:"The application consists of a server-side and a client-side. The server-side is built using NodeJS and ExpressJS, and it is responsible for handling the communication between users and persisting the chat messages in a MongoDB database. The server also implements web sockets using Socket.IO, which allows real-time communication between users." ,
-                    
-                    
-                    
-                    
-                    
+                    content:"The application consists of a server-side and a client-side. The server-side is built using NodeJS and ExpressJS, and it is responsible for handling the communication between users and persisting the chat messages in a MongoDB database. The server also implements web sockets using Socket.IO, which allows real-time communication between users. fruthermore we implemented video calling between members in groups to allow for quicker communication" ,
                     
                     image:"",
 
@@ -45,13 +40,15 @@ const projects = [
                     content:"Overall, the real-time chatting application with customizable themes is a full-stack web application that provides real-time communication between users while giving them the ability to personalize their user interface. The application is built using the MERN stack, which provides a scalable and robust development platform."
                 }
 
-            ]
+            ],
+            icon:"github"
+
         }
 
     },{
         index:1,
         title:"Neural Network Library" ,
-        description:"Personnel Neural Network for data and image processing",
+        description:"Personnel Neural Network for Data and Image processing",
         hasPopUp:false,
         directLink:true,
         link:"https://github.com/sa318sha/NN_Library",
@@ -61,7 +58,7 @@ const projects = [
     },{
         index:2,
         title:"MicroController LCD movement program" ,
-        description:"movement program that detects users orientation and momentum using gyroscope",
+        description:"Movement Program that detects Users Orientation and Momentum using Gyroscope",
         link:"",
         hasPopUp:true,
         directLink:false,
@@ -92,13 +89,13 @@ const projects = [
 
                 }
 
-            ]
+            ],
         }
     },
     {
         index:3,
         title: "Undergraduate Research",
-        description:"researched methodologies in implementing Federated Learning with Kubernetes for local deployment",
+        description:"Researched Methodologies in Implementing Federated Learning with Kubernetes for local deployment",
         image:PURE,
         link:"",
         hasPopUp:true,
@@ -124,7 +121,7 @@ const projects = [
     },{
         index:4,
         title:"Movie Theatre Booking System",
-        description:"Users are able to login with a UI and book a movie at available showtimes and theatres",
+        description:"Users are able to login with a UI and Book a Movie at Available Showtimes and theatres",
         link:"https://github.com/noornawaz1/ENSF480---Final-Project",
         // image: MovieTheatre,
         hasPopUp:true,
@@ -138,7 +135,9 @@ const projects = [
                     image:"",
                     content: "• Coordinated development using waterfall techniques and comprehensive UML modelling Designed and implemented a GUI, which included a custom graphical seat-selection screen, using Java Swing. Interfaced with a MySQL database containing information such as movies, theatres, seats, registered users. Contributed to an extensive unit test suite written using JUnit."
                 }
-            ]
+            ],
+            icon:"github"
+
         }
 
     }

@@ -30,6 +30,7 @@
   cursor: pointer;
   padding: 0.5em 1em;
   font-size: 0.7em;
+  z-index: 5;
 
 }
 /* sx={{

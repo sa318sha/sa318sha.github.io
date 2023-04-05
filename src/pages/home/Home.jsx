@@ -49,9 +49,9 @@ export default function Home({render}){
                     <div className ="wrapper black">
 
 
-                        <h2 class className="sectionTitle"> My passion and focus is Software Development</h2>
+                        <h2 class className="sectionTitle"> My Passion and Focus is Software Development</h2>
                         <p>
-                        As an undergraduate Software Engineering student, I am constantly excited about my projects and learning new things. Every day, I feel like I am unlocking a new piece of the puzzle and building my skills as a programmer. Whether it's creating a new app, playing with neural networks, or working with graphics, I am always eager to dive in and learn as much as I can.</p>
+                        As an undergraduate student of Software Engineering, I am constantly excited about my projects and learning new things. Every day, I feel like I am unlocking a new piece of the puzzle and building my skills as a programmer. Whether it is creating a new app, playing with neural networks, or working with graphics, I am always eager to dive in and learn as much as I can.</p>
                         
                         <div className="buttonHolder">
                         <Link className="standardLinkStyle centerElementsRow" to="/about">

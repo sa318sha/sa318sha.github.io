@@ -25,7 +25,7 @@ export default function Contact(props){
                                 <h2 class className="sectionTitle">  Contact me!</h2>
                                 <p className="">
                                     
-                                if you want to get in contact with me, or have any additional inquiries. Feel free to shoot me an email with the button below
+                                If you want to get in contact with me, or have any additional inquiries. Feel free to shoot me an email with the button below
     
                                 </p>
                                     <a className=" iconButtonBlack" href="mailto:kobrusevsasha318@gmail.com"><span class="material-symbols-outlined">
